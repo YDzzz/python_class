@@ -1,17 +1,28 @@
 # coding=utf-8
-#string process function
+#string process method
 
-print("len('1234') = ", len("1234"))
-print("str(1.2345) = ", str(1.2345))
-print("str([1,2]) = ", str([1,2]))
+"""
+    str.lower()
+    返回字符串的小写副本
+    str.upper()
+    返回字符串的大写副本
 
-print("hex(425) = ", hex(425))
-print("oct(425) = ", oct(425))
+    str.split(sep=None)
+    返回str根据sep分割的列表
 
-'''
-    chr()       >>      将Unicode码转化为字符
-    ord()       >>      将字符转化为Unicode码
-'''
+    str.count(sub)
+    返回字串sub在str中出现的次数
 
-for i in range(12):
-    print (chr(i + 9800), end = "")
+    str.replace(old, new)
+    返回字符串str中所有old字串被替换为new的副本
+
+    str.center(width[,fillchar])
+    字符串str根据width居中，两边使用fillchar填充
+
+    str.strip(chars)
+    从str中去除左右侧chars中列出的字符
+
+    str.join(iter)
+    在iter变量除最后元素外每个元素最后依次增加一个str
+
+"""
