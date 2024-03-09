@@ -1,12 +1,17 @@
 # coding=utf-8
-#string operational character
+#WeekNamePrint
 
-str3 = " Hello World "
-str1 = " first string "
-str2 = ' second string '
-str4 = 'string'
 
-print (str1 + str2)
-print (3 * str3)
-print (str4 in str1)
-print (str4 in str3)
+#v1
+weekStr1 = "星期一星期二星期三星期四星期五星期六星期日"
+weekId = eval(input("请输入星期数字（1-7）："))
+pos = (weekId - 1) * 3
+print (weekStr1[pos: pos + 3])
+
+
+#v2
+weekStr2 = "一二三四五六日"
+weekId = eval(input("请输入星期数字（1-7）："))
+pos = (weekId - 1)
+print ("星期" + weekStr2[pos: pos + 1])
+
