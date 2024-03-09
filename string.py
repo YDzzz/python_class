@@ -1,17 +1,17 @@
 # coding=utf-8
-#WeekNamePrint
+#string process function
 
+print("len('1234') = ", len("1234"))
+print("str(1.2345) = ", str(1.2345))
+print("str([1,2]) = ", str([1,2]))
 
-#v1
-weekStr1 = "星期一星期二星期三星期四星期五星期六星期日"
-weekId = eval(input("请输入星期数字（1-7）："))
-pos = (weekId - 1) * 3
-print (weekStr1[pos: pos + 3])
+print("hex(425) = ", hex(425))
+print("oct(425) = ", oct(425))
 
+'''
+    chr()       >>      将Unicode码转化为字符
+    ord()       >>      将字符转化为Unicode码
+'''
 
-#v2
-weekStr2 = "一二三四五六日"
-weekId = eval(input("请输入星期数字（1-7）："))
-pos = (weekId - 1)
-print ("星期" + weekStr2[pos: pos + 1])
-
+for i in range(12):
+    print (chr(i + 9800), end = "")
